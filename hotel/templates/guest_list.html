@@ -1,0 +1,20 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Guest List</title>
+    </head>
+
+    <body>
+        <h1>Guest List</h1>
+        <ul>
+            {% for guest in guest_list%}
+            <li>
+                <a>{{ guest.name }}</a>
+            </li>
+            <h2>{{guest}}</h2>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

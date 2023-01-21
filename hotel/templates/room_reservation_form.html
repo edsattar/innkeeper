@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1>Room Reservation Form</h1>
+
+<h2>Create/Edit Room Reservation</h2>
+
+<form method="post">
+    {% csrf_token %} {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock %}
